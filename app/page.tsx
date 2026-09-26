@@ -71,82 +71,141 @@ export default function Home() {
       </section>
 
             {/* ABOUT / INTRODUCTION */}
-      <section className="bg-[#f7f5f0] py-24 sm:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-10">
-          
-          <div className="grid gap-16 lg:grid-cols-12 lg:items-center">
+<section className="bg-[#f7f5f0] py-24 sm:py-32 lg:py-40">
+  <div className="mx-auto max-w-7xl px-6 lg:px-10">
 
-            {/* Section Label */}
-            <div className="lg:col-span-4">
-              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#0B1220]/50">
-                About Toubkal Expeditions
+    <div className="grid gap-16 lg:grid-cols-12 lg:items-center">
+
+      {/* IMAGE */}
+      <div className="relative lg:col-span-6">
+
+        <div className="relative overflow-hidden rounded-[2rem]">
+          <img
+            src="/images/home/berber-villages-trek-morocco.jpg"
+            alt="Berber villages and mountain landscapes in the High Atlas"
+            className="h-[520px] w-full object-cover transition duration-700 hover:scale-105 sm:h-[620px]"
+          />
+
+          {/* Image Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-transparent" />
+
+          {/* Image Caption */}
+          <div className="absolute bottom-6 left-6 right-6">
+            <div className="flex items-center gap-3">
+              <span className="h-px w-8 bg-white/60" />
+              <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-white/75">
+                High Atlas • Morocco
               </p>
-            </div>
-
-            {/* Main Content */}
-            <div className="lg:col-span-7 lg:col-start-6">
-
-              <h2 className="text-4xl font-semibold leading-tight tracking-tight text-[#0B1220] sm:text-5xl">
-                Morocco through the eyes of people who know it best.
-              </h2>
-
-              <div className="mt-8 space-y-6 text-base leading-8 text-[#0B1220]/65 sm:text-lg">
-                <p>
-                  Toubkal Expeditions is a locally based Moroccan adventure
-                  company creating private and small-group journeys across
-                  the High Atlas, Sahara and beyond.
-                </p>
-
-                <p>
-                  From high mountain trekking and Toubkal expeditions to
-                  mountain biking, e-MTB adventures and Atlas-to-desert
-                  journeys, we combine carefully designed routes with genuine
-                  local knowledge and personal service.
-                </p>
-
-                <p>
-                  Our goal is simple: to take you beyond the usual tourist
-                  experience and introduce you to the landscapes, villages,
-                  people and cultures that make Morocco so unique.
-                </p>
-              </div>
-
-              {/* Small Details */}
-              <div className="mt-10 grid gap-6 border-t border-[#0B1220]/10 pt-8 sm:grid-cols-3">
-
-                <div>
-                  <p className="text-2xl font-semibold text-[#0B1220]">
-                    Local
-                  </p>
-                  <p className="mt-2 text-sm text-[#0B1220]/50">
-                    Moroccan guides & expertise
-                  </p>
-                </div>
-
-                <div>
-                  <p className="text-2xl font-semibold text-[#0B1220]">
-                    Private
-                  </p>
-                  <p className="mt-2 text-sm text-[#0B1220]/50">
-                    Journeys designed around you
-                  </p>
-                </div>
-
-                <div>
-                  <p className="text-2xl font-semibold text-[#0B1220]">
-                    Personal
-                  </p>
-                  <p className="mt-2 text-sm text-[#0B1220]/50">
-                    From first enquiry to finish
-                  </p>
-                </div>
-
-              </div>
-
             </div>
           </div>
         </div>
-      </section>
+
+        {/* Floating Detail Card */}
+        <div className="absolute -bottom-8 -right-4 hidden w-56 rounded-2xl bg-[#0B1220] p-6 text-white shadow-2xl sm:block lg:-right-8">
+          <p className="text-[10px] font-semibold uppercase tracking-[0.25em] text-white/40">
+            Our Approach
+          </p>
+
+          <p className="mt-4 text-lg font-medium leading-7">
+            Travel deeper.
+            <span className="block text-white/45">
+              Experience more.
+            </span>
+          </p>
+        </div>
+
+      </div>
+
+
+      {/* CONTENT */}
+      <div className="lg:col-span-5 lg:col-start-8">
+
+        {/* Section Label */}
+        <div className="flex items-center gap-4">
+
+          <span className="h-px w-10 bg-[#0B1220]/30" />
+
+          <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-[#0B1220]/45">
+            About Toubkal Expeditions
+          </p>
+
+        </div>
+
+
+        {/* Heading */}
+        <h2 className="mt-7 text-4xl font-medium leading-[1.05] tracking-[-0.02em] text-[#0B1220] sm:text-5xl lg:text-6xl">
+          Morocco through
+          <span className="block text-[#0B1220]/40">
+            the eyes of locals.
+          </span>
+        </h2>
+
+
+        {/* Text */}
+        <div className="mt-8 space-y-5 text-base leading-8 text-[#0B1220]/60 sm:text-lg">
+
+          <p>
+            Toubkal Expeditions is a locally based Moroccan adventure
+            company creating private and small-group journeys across
+            the High Atlas, Sahara and beyond.
+          </p>
+
+          <p>
+            From high mountain trekking and Toubkal expeditions to
+            mountain biking, e-MTB adventures and Atlas-to-desert
+            journeys, we combine carefully designed routes with
+            genuine local knowledge and personal service.
+          </p>
+
+          <p>
+            Our aim is simple: to take you beyond the usual tourist
+            experience and introduce you to the landscapes, villages,
+            people and culture that make Morocco so distinctive.
+          </p>
+
+        </div>
+
+
+        {/* Details */}
+        <div className="mt-10 grid grid-cols-3 border-t border-[#0B1220]/10 pt-8">
+
+          <div>
+            <p className="text-lg font-medium text-[#0B1220] sm:text-xl">
+              Local
+            </p>
+
+            <p className="mt-2 max-w-[120px] text-xs leading-5 text-[#0B1220]/45 sm:text-sm">
+              Moroccan guides & expertise
+            </p>
+          </div>
+
+          <div className="border-l border-[#0B1220]/10 pl-5 sm:pl-7">
+            <p className="text-lg font-medium text-[#0B1220] sm:text-xl">
+              Private
+            </p>
+
+            <p className="mt-2 max-w-[120px] text-xs leading-5 text-[#0B1220]/45 sm:text-sm">
+              Journeys shaped around you
+            </p>
+          </div>
+
+          <div className="border-l border-[#0B1220]/10 pl-5 sm:pl-7">
+            <p className="text-lg font-medium text-[#0B1220] sm:text-xl">
+              Personal
+            </p>
+
+            <p className="mt-2 max-w-[120px] text-xs leading-5 text-[#0B1220]/45 sm:text-sm">
+              From first enquiry to finish
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
 
             {/* OUR EXPERIENCES */}
       <section id="experiences" className="bg-white py-24 sm:py-32">
